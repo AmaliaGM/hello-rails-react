@@ -23,9 +23,13 @@ function App() {
 
   return (
   <div className="App">
-      <h1> Hello </h1>
+    <h1> Hello </h1>
+    <button onClick={setWorlds} type='submit'>
+          Change the World
+      </button>
       <Worlds worlds={worlds} />
-    </div>
+  </div>
+  
   );
 }
 

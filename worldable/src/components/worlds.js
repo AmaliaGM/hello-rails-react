@@ -3,7 +3,6 @@ import React from 'react'
 function Worlds(props) {
   return (
     <div> 
-      <h1>These greetings are from API</h1>
       {props.worlds.map((world) => {
         return (
           <div key={world.id}>

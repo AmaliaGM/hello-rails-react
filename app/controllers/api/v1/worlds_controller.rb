@@ -48,4 +48,10 @@ class Api::V1::WorldsController < ApplicationController
     def world_params
       params.require(:world).permit(:title, :body)
     end
+
+    def random
+      random_number = 1 + rand(Worlds.count)
+      @mesage = World.find(random_number)
+      render json: @mesage
+    end
 end
