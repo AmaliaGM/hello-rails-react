@@ -1,5 +1,5 @@
 class Api::V1::WorldsController < ApplicationController
-  before_action :set_world, only: %i[ show update destroy ]
+  before_action :set_world, only: %i[show update destroy]
 
   # GET /worlds
   def index
@@ -39,13 +39,14 @@ class Api::V1::WorldsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_world
-      @world = World.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def world_params
-      params.require(:world).permit(:title, :body)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_world
+    @world = World.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def world_params
+    params.require(:world).permit(:title, :body)
+  end
 end
