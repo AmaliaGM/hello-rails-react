@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
@@ -32,7 +33,7 @@ function App() {
       setWorlds(
         worlds[parseInt(Math.random() * worlds.length)]
       )
-      } id = 'reload' >
+      }>
           Change the World
       </button>
   </div>

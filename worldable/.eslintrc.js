@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 module.exports = {
     "env": {
         "browser": true,
@@ -7,18 +8,16 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended"
     ],
+    "overrides": [
+    ],
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
     "rules": {
-        "react/jsx-filename-extension": [1, {
-        "extensions": [".js", ".jsx"]}
-    ]}
-};
+        "react/prop-types": 0
+    }
+}
