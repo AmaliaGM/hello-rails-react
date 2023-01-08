@@ -31,7 +31,8 @@ function App() {
 
     <button onClick={() => 
       setWorlds(
-        worlds[parseInt(Math.random() * worlds.length)]
+        worlds[parseInt(Math.random() * worlds.length)],
+        window.location.reload(),
       )
       }>
           Change the World
