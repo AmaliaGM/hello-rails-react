@@ -1,0 +1,27 @@
+{
+    "name": "Ruby Development",
+    "dockerFile": "Dockerfile",
+    "appPort": 9001,
+    "extensions": [
+      "rebornix.Ruby",
+      "castwide.solargraph",
+      "kaiwood.endwise",
+      "misogi.ruby-rubocop",
+      "groksrc.ruby",
+      "hoovercj.ruby-linter",
+      "miguel-savignano.ruby-symbols",
+      "wingrunr21.vscode-ruby"
+    ],
+    "settings": {
+      "[ruby]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+      },
+      "solargraph.commandPath": "/usr/local/bundle/bin/solargraph",
+      "solargraph.bundlerPath": "/usr/local/bin/bundle",
+      "ruby.rubocop.executePath": "/usr/local/bundle/bin/",
+      "ruby.rubocop.onSave": true,
+      "ruby.rubocop.configFilePath": "/workspaces/jiffy/.rubocop.yml",
+    },
+    "postCreateCommand": "bundle install"
+   }
